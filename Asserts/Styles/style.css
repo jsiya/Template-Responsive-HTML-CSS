@@ -280,16 +280,17 @@ line-height: 101.385%; /* 55.762px */
 }
 .cards-sec{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
 }
 .cards-sec img{
-    width: 231.088px;
-    height: 92.667px;
+    width: 300px;
     fill: url(<path-to-image>), lightgray 0px -34.335px / 100% 166.25% no-repeat;
 }
 .small-card{
     width:fit-content;
     border-radius: 30px;
+    width: 300px;
     background: #FFF;
     box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.25);
 }
@@ -298,6 +299,10 @@ line-height: 101.385%; /* 55.762px */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    gap: 15px;
 }
 .small-card p{
     margin: 0px;
@@ -305,7 +310,7 @@ line-height: 101.385%; /* 55.762px */
 .small-card .p-1{
     color: #000;
 font-family: Roboto;
-font-size: 30px;
+font-size: 20px;
 font-style: normal;
 font-weight: 700;
 line-height: 130%; /* 39px */
@@ -314,15 +319,85 @@ line-height: 130%; /* 39px */
 .small-card .p-2{
     color: #000;
 font-family: Roboto;
-font-size: 25px;
+font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: 130%; /* 32.5px */
 width: 70%;
 }
 
+.main-sec-9{
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
+.main-sec-9-header{
+    color: #000;
+font-family: "Roboto Slab";
+font-size: 55px;
+font-style: normal;
+font-weight: 700;
+line-height: 101.385%; /* 55.762px */
+}
+.main-sec-9 .big-card{
+    border-radius: 30px;
+background: #FFF;
+box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.25);
+width: 70%;
+padding-bottom: 40px;
+}
+.big-card .big-card-info{
+    color: #000;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
+margin-left: 45px;
+margin-right: 45px;
+padding-top: 40px;
+}
+.big-card-inner-div{
+    margin-left: 45px;
+    margin-right: 45px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.big-card .profil-logo{
+    width: 160px;
+}
 
+.main-sec-10{
+    background: #9DC9C8;
+}
+.main-sec-10-header{
+    color: #000;
+font-family: "Roboto Slab";
+font-size: 55px;
+font-style: normal;
+font-weight: 700;
+line-height: 101.385%; /* 55.762px */
+}
+.main-sec-10-bottom .small-info-10{
+
+}
+.small-info-10 .p-1{
+    color: #000;
+font-family: Roboto;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: 101.385%; /* 25.346px */
+}
+.small-info-10 .p-2{
+    color: #000;
+    font-family: Roboto;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101.385%; /* 81.108px */
+}
 
 
 footer{
